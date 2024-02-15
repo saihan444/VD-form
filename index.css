@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.585), #ffcc0095, #33cc33, #0066ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite
+    
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+    
+  }
+form{
+    margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    
+
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+     align-items: center;  
+    width:50%;
+    height:85vh;
+    padding: 12px 50px; 
+    border-radius: 12px;
+    box-shadow: 0 0 10px;
+    background-color: rgba(245, 245, 220, 0.582);
+
+    
+}
+
+
+
+
+p{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+label{
+    width: 80%;
+}
+input{
+    width: 80%;
+    padding: 9px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+button{
+    width: 30%;
+    height: 6vh;
+   border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    
+    box-shadow: 0 0 5px;
+}
+button:hover{
+    background-color:rgba(0, 0, 0, 0.208);
+   
+}
+
+
+
+
+
+/*------------------------------------------------- responsive------------------------------------ */
+
+@media(max-width:684px){
+    
+    
+    .container {
+    width: 77%;
+
+    }
+    @media(max-width:410px){
+        .container {
+            padding: 14px 9px;
+        }
+    }
+}
